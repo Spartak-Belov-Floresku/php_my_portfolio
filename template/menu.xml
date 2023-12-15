@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<building_data>
+	<building address="about me" href="about"/>
+	<building address="portfolio" href="portfolio" />
+	<!--<building address="products" href="products" />-->
+	<building address="common codes" href="codes" />
+	<building address="contact" href="contact" />
+</building_data>

@@ -1,0 +1,126 @@
+#portfolio{
+	padding-top:100px;
+}
+.pdiv:not(:nth-child(4)){
+	background: url(../images/linebottom.png) repeat-x scroll center bottom transparent;
+    padding-bottom: 1.5em;
+	max-width:1000px;
+	min-width:320px;
+	margin:0 auto 80px;
+	padding-top:20px;
+}
+.project{
+	display:block;
+	width:95%;
+	margin:0 auto;
+	max-width:1000px;
+	min-width:320px;
+}
+.project>h2{
+	font-family: 'Podkova', serif;
+	font-weight:700;
+	font-size:24px;
+	margin:20px 0 50px;
+	text-align:center;
+}
+.project>h2>span{
+	font-style:italic;
+	font-weight:900;
+	font-size:90%;
+}
+.imgproject{
+	float:right;
+	width:40%;
+	padding:20px;
+	max-width:400px;
+	min-width:280px;
+	margin-bottom:20px;
+}
+.imgproject>img{
+	position: relative;
+	width:100%;
+}
+.pdiv:nth-child(odd) .imgproject{
+	float:left;
+}
+.descriptionproject{
+	float:left;
+	width:48%;
+	max-width:400px;
+	min-width:280px;
+}
+.pdiv:nth-child(odd) .descriptionproject{
+	float:right;
+}
+.descriptionproject>p{
+	padding:10px;
+    font: 700 130%/1.5 Georgia,serif;
+    color: rgba(0,0,0,.8);
+    vertical-align: baseline;
+    text-align: justify;
+}
+.descriptionproject>a{
+	float:left;
+	margin:20px 0 0 10px;
+	color: #2A3A3F;
+    background-color: transparent;
+    border: 2px solid #FDCD3B;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    letter-spacing: 0;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+	text-decoration:none;
+	margin-bottom:50px;
+}
+.descriptionproject>a:hover{
+	padding: 10px 30px;
+	border-color:transparent;
+	color:#FDCD3B;
+	background-color: #2A3A3F;
+}
+.descriptionproject>p::first-letter { 
+    margin-left:45px;
+}
+@media only screen and (max-width:740px){
+	
+	.project>h2{
+		font-size:20px;
+		text-align:center;
+	}
+	.imgproject,
+	.pdiv .imgproject,
+	.descriptionproject,
+	.pdiv .descriptionproject,
+	.pdiv:nth-child(odd) .imgproject,
+	.pdiv:nth-child(odd) .descriptionproject{
+		float:none;
+		display:block;
+		margin:0 auto 25px;
+	}
+	.descriptionproject>p::first-letter { 
+		margin-left:0;
+	}
+	.descriptionproject>a{
+		float:none;
+		width:160px;
+		display:block;
+		margin:20px auto 50px;
+	}
+	.descriptionproject>a:hover{
+		padding: 10px 20px;
+	}
+	
+}
